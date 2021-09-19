@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: aopdemo
+server:
+  port: 8111
