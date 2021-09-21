@@ -2,8 +2,8 @@ package com.chad.aopdemo.controller;
 
 import com.chad.aopdemo.aop.inter.NewWebLog;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -22,10 +22,10 @@ public class AopContriller {
 	 * @param id id
 	 * @return {@code String}
 	 */
-	@GetMapping("demo")
+	@GetMapping("demo/{id}")
 	//@WebLog(desc = "测试aop方法")
 	@NewWebLog(desc = "测试aop方法")
-	public String aopDemo(@RequestParam String id) {
+	public String aopDemo(@PathVariable("id") String id) {
 		return id;
 	}
 }
