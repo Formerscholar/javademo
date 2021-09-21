@@ -1,8 +1,10 @@
 package com.chad.aopdemo.controller;
 
 import com.chad.aopdemo.aop.inter.NewWebLog;
-import com.chad.aopdemo.aop.inter.WebLog;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * aop contriller
