@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.io.Serializable;
 import java.util.Collection;
 
@@ -13,46 +14,46 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 @Data
 @TableName(value = "javademo.zc_users")
-public class Users implements Serializable, UserDetails{
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
-
-    @TableField(value = "username")
-    private String username;
-
-    @TableField(value = "`password`")
-    private String password;
-
-    private static final long serialVersionUID = 1L;
-
-    public static final String COL_ID = "id";
-
-    public static final String COL_USERNAME = "username";
-
-    public static final String COL_PASSWORD = "password";
-    
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
-    }
-    
-    @Override
-    public boolean isAccountNonExpired() {
-        return false;
-    }
-    
-    @Override
-    public boolean isAccountNonLocked() {
-        return false;
-    }
-    
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return false;
-    }
-    
-    @Override
-    public boolean isEnabled() {
-        return false;
-    }
+public class Users implements UserDetails {
+	@TableId(value = "id", type = IdType.AUTO)
+	private Integer id;
+	
+	@TableField(value = "username")
+	private String username;
+	
+	@TableField(value = "`password`")
+	private String password;
+	
+	private static final long serialVersionUID = 1L;
+	
+	public static final String COL_ID = "id";
+	
+	public static final String COL_USERNAME = "username";
+	
+	public static final String COL_PASSWORD = "password";
+	
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		return null;
+	}
+	
+	@Override
+	public boolean isAccountNonExpired() {
+		return false;
+	}
+	
+	@Override
+	public boolean isAccountNonLocked() {
+		return false;
+	}
+	
+	@Override
+	public boolean isCredentialsNonExpired() {
+		return false;
+	}
+	
+	@Override
+	public boolean isEnabled() {
+		return false;
+	}
 }

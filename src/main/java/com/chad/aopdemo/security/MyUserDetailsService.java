@@ -10,7 +10,6 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -29,7 +28,6 @@ public class MyUserDetailsService implements UserDetailsService {
 			throw new UsernameNotFoundException("用户不存在!");
 		}
 		List<GrantedAuthority> auths = AuthorityUtils.commaSeparatedStringToAuthorityList("admin");
-		String password = new BCryptPasswordEncoder().encode(users.getPassword());
-		return new User(users.getUsername(), password, auths);
+		return new User(users.getUsername(), users.getPassword(), auths);
 	}
 }
