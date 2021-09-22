@@ -1,5 +1,14 @@
 spring:
   application:
     name: aopdemo
+  datasource:
+    url: jdbc:mysql://47.102.117.109:3306/javademo?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false
+    username: javademo
+    password: PXhn4MMAXGELdYJP
+    driver-class-name: com.mysql.cj.jdbc.Driver
 server:
   port: 8111
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: zc_
