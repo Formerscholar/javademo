@@ -6,6 +6,9 @@ spring:
     username: javademo
     password: PXhn4MMAXGELdYJP
     driver-class-name: com.mysql.cj.jdbc.Driver
+#  mvc:
+#    servlet:
+#      path: /v1/api
 server:
   port: 8111
 mybatis-plus:
