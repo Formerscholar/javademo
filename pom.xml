@@ -97,7 +97,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.1.17.RELEASE</version>
                 <configuration>
-                    <mainClass>com.chad.aopdemo.AopdemoApplication</mainClass>
+                    <mainClass>com.chad.ademo.AdamoApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

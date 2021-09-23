@@ -1,4 +1,4 @@
-package com.chad.aopdemo.security;
+package com.chad.ademo.security;
 
 import org.junit.Test;
 import org.junit.Before;

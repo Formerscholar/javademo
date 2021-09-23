@@ -1,4 +1,4 @@
-package com.chad.aopdemo;
+package com.chad.ademo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

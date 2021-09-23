@@ -1,7 +1,7 @@
-package com.chad.aopdemo.service;
+package com.chad.ademo.service;
 
 import java.util.List;
-import com.chad.aopdemo.model.Users;
+import com.chad.ademo.model.Users;
 import com.baomidou.mybatisplus.extension.service.IService;
 public interface UsersService extends IService<Users>{
 

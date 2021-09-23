@@ -1,4 +1,4 @@
-package com.chad.aopdemo.aop.inter;
+package com.chad.ademo.aop.inter;
 
 
 import java.lang.annotation.*;

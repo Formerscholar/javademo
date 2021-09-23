@@ -1,6 +1,6 @@
-package com.chad.aopdemo.config;
+package com.chad.ademo.config;
 
-import com.chad.aopdemo.security.MyUserDetailsService;
+import com.chad.ademo.security.MyUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

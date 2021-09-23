@@ -1,8 +1,8 @@
-package com.chad.aopdemo.controller;
+package com.chad.ademo.controller;
 
-import com.chad.aopdemo.aop.inter.NewWebLog;
-import com.chad.aopdemo.model.Users;
-import com.chad.aopdemo.service.UsersService;
+import com.chad.ademo.aop.inter.NewWebLog;
+import com.chad.ademo.model.Users;
+import com.chad.ademo.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.chad.aopdemo.controller; 
+package com.chad.ademo.controller;
 
 import org.junit.Test; 
 import org.junit.Before; 

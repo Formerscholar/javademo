@@ -1,6 +1,6 @@
-package com.chad.aopdemo.aop.aspect;
+package com.chad.ademo.aop.aspect;
 
-import com.chad.aopdemo.aop.inter.NewWebLog;
+import com.chad.ademo.aop.inter.NewWebLog;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
@@ -21,7 +21,7 @@ public class NewWebLogAsprct {
 	private static final String LINE_SEPARATOR = System.lineSeparator();
 	
 	/** 以自定义 @WebLog 注解为切点 */
-	@Pointcut("@annotation(com.chad.aopdemo.aop.inter.NewWebLog)")
+	@Pointcut("@annotation(com.chad.ademo.aop.inter.NewWebLog)")
 	public void webLog() {
 	}
 	

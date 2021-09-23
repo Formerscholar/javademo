@@ -1,8 +1,8 @@
-package com.chad.aopdemo.security;
+package com.chad.ademo.security;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.chad.aopdemo.mapper.UsersMapper;
-import com.chad.aopdemo.model.Users;
+import com.chad.ademo.mapper.UsersMapper;
+import com.chad.ademo.model.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;

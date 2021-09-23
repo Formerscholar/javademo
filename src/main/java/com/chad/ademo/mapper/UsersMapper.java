@@ -1,7 +1,7 @@
-package com.chad.aopdemo.mapper;
+package com.chad.ademo.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.chad.aopdemo.model.Users;
+import com.chad.ademo.model.Users;
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

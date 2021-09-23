@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.chad.aopdemo.mapper.UsersMapper">
-  <resultMap id="BaseResultMap" type="com.chad.aopdemo.model.Users">
+<mapper namespace="com.chad.ademo.mapper.UsersMapper">
+  <resultMap id="BaseResultMap" type="com.chad.ademo.model.Users">
     <!--@mbg.generated-->
     <!--@Table javademo.zc_users-->
     <id column="id" jdbcType="INTEGER" property="id" />
@@ -65,7 +65,7 @@
       (#{item.username,jdbcType=VARCHAR}, #{item.password,jdbcType=VARCHAR})
     </foreach>
   </insert>
-  <insert id="insertOrUpdate" keyColumn="id" keyProperty="id" parameterType="com.chad.aopdemo.model.Users" useGeneratedKeys="true">
+  <insert id="insertOrUpdate" keyColumn="id" keyProperty="id" parameterType="com.chad.ademo.model.Users" useGeneratedKeys="true">
     <!--@mbg.generated-->
     insert into javademo.zc_users
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -92,7 +92,7 @@
       `password` = #{password,jdbcType=VARCHAR},
     </trim>
   </insert>
-  <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id" parameterType="com.chad.aopdemo.model.Users" useGeneratedKeys="true">
+  <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id" parameterType="com.chad.ademo.model.Users" useGeneratedKeys="true">
     <!--@mbg.generated-->
     insert into javademo.zc_users
     <trim prefix="(" suffix=")" suffixOverrides=",">

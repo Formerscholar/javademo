@@ -1,18 +1,10 @@
-package com.chad.aopdemo.aop.aspect;
+package com.chad.ademo.aop.aspect;
 
 
-import com.chad.aopdemo.aop.inter.WebLog;
-import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
-import javax.servlet.http.HttpServletRequest;
-import java.lang.reflect.Method;
 
 @Aspect
 @Component
@@ -21,7 +13,7 @@ public class WebLogAspect {
 	
 
 	
-	@Pointcut("@annotation(com.chad.aopdemo.aop.inter.WebLog)")
+	@Pointcut("@annotation(com.chad.ademo.aop.inter.WebLog)")
 	public void webLog() {
 	}
 	

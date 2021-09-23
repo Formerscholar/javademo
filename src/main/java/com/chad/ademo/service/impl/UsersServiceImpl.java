@@ -1,13 +1,12 @@
-package com.chad.aopdemo.service.impl;
+package com.chad.ademo.service.impl;
 
 import org.springframework.stereotype.Service;
-import javax.annotation.Resource;
+
 import java.util.List;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import java.util.List;
-import com.chad.aopdemo.mapper.UsersMapper;
-import com.chad.aopdemo.model.Users;
-import com.chad.aopdemo.service.UsersService;
+import com.chad.ademo.mapper.UsersMapper;
+import com.chad.ademo.model.Users;
+import com.chad.ademo.service.UsersService;
 @Service
 public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements UsersService{
 
