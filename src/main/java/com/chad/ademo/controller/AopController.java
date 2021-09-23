@@ -4,6 +4,7 @@ import com.chad.ademo.aop.inter.NewWebLog;
 import com.chad.ademo.model.Users;
 import com.chad.ademo.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -25,6 +26,7 @@ public class AopController {
 	 * @param id id
 	 * @return {@code String}
 	 */
+	@Secured("ROLE_admin")
 	@GetMapping("demo/{id}")
 	//@WebLog(desc = "测试aop方法")
 	@NewWebLog(desc = "测试aop方法")

@@ -15,3 +15,6 @@ mybatis-plus:
   global-config:
     db-config:
       table-prefix: zc_
+logging:
+  level:
+    com.chad.ademo.mapper: debug

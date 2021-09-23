@@ -29,6 +29,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests()
 			.antMatchers("/login.html", "/error.html", "/images/*.png")
 			.permitAll()
+			//.antMatchers("/vip.html").hasAnyAuthority("vip")
 			.anyRequest()
 			.authenticated();
 		http.csrf()
