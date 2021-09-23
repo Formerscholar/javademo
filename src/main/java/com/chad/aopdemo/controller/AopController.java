@@ -4,10 +4,7 @@ import com.chad.aopdemo.aop.inter.NewWebLog;
 import com.chad.aopdemo.model.Users;
 import com.chad.aopdemo.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * aop contriller
@@ -17,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("aop")
-public class AopContriller {
+public class AopController {
 	
 	@Autowired
 	private UsersService usersService;
