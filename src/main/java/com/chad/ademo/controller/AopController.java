@@ -26,8 +26,8 @@ public class AopController {
 	 * @param id
 	 * @return {@code String}
 	 */
-	//@Secured("ROLE_admin")
-	@PreAuthorize("hasAuthority('admin')")
+	@Secured("ROLE_admin") //角色判断
+	//@PreAuthorize("hasAuthority('admin')") // 权限判断
 	@GetMapping("demo/{id}")
 	//@WebLog(desc = "测试aop方法")
 	@NewWebLog(desc = "测试aop方法")

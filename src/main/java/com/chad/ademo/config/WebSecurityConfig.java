@@ -72,7 +72,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		tokenRepository.setDataSource(dataSource);
 		
 		//设置启动的时候，在数据库中创建表格persistent_logins。只有数据库中不存在表格的时候可以使用。默认值是false
-		tokenRepository.setCreateTableOnStartup(true);
+		//tokenRepository.setCreateTableOnStartup(true);
 		return tokenRepository;
 	}
 }
