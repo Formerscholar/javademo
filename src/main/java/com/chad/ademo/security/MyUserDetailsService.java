@@ -47,6 +47,7 @@ public class MyUserDetailsService implements UserDetailsService {
 		List<Role> roles = roleMapper.selectList(lambdaQueryWrapper);
 		List<String> stringList = roles.stream().map(Role::getRoleName).collect(Collectors.toList());
 		String join = String.join(",", stringList);
+		System.out.println(join);
 		List<GrantedAuthority> auths = AuthorityUtils.commaSeparatedStringToAuthorityList(join);
 		return new User(users.getUsername(), users.getPassword(), auths);
 	}

@@ -7,7 +7,10 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 
 @SpringBootApplication
 @MapperScan("com.chad.ademo.mapper")
-@EnableGlobalMethodSecurity(securedEnabled = true)
+@EnableGlobalMethodSecurity(
+	securedEnabled = true,
+	prePostEnabled = true
+)
 public class AdamoApplication {
 	
 	public static void main(String[] args) {

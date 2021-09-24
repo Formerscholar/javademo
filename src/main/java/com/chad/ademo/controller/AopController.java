@@ -5,6 +5,7 @@ import com.chad.ademo.model.Users;
 import com.chad.ademo.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -20,13 +21,13 @@ public class AopController {
 	@Autowired
 	private UsersService usersService;
 	
+	
 	/**
-	 * aop演示
-	 *
-	 * @param id id
+	 * @param id
 	 * @return {@code String}
 	 */
-	@Secured("ROLE_admin")
+	//@Secured("ROLE_admin")
+	@PreAuthorize("hasAuthority('admin')")
 	@GetMapping("demo/{id}")
 	//@WebLog(desc = "测试aop方法")
 	@NewWebLog(desc = "测试aop方法")
