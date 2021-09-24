@@ -26,10 +26,11 @@ public class AopController {
 	 * @param id
 	 * @return {@code String}
 	 */
-	@Secured("ROLE_admin") //角色判断
+	//@Secured("ROLE_admin") //角色判断
 	//@PreAuthorize("hasAuthority('admin')") // 权限判断
-	@GetMapping("demo/{id}")
 	//@WebLog(desc = "测试aop方法")
+	@PreAuthorize("hasRole('admin')")//角色判断
+	@GetMapping("demo/{id}")
 	@NewWebLog(desc = "测试aop方法")
 	public String aopDemo(@PathVariable("id") String id) {
 		Users byId = usersService.getById(1);
